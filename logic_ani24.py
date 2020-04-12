@@ -70,10 +70,10 @@ class LogicAni24(object):
             tmp = 'sources: [{"file":"'
             idx1 = data.find(tmp) + len(tmp)
             idx2 = data.find('"', idx1)
-            #logger.debug(idx1)
-            #logger.debug(idx2)
+            logger.debug(idx1)
+            logger.debug(idx2)
             video_url = data[idx1:idx2]
-            #logger.debug(video_url)
+            logger.debug(video_url)
 
             #https://files0.filegroupa.com/files/0/new/id_39450.mp4
             #https://files0.filegroupa.com/redirect.php?path=%2ffiles%2f0%2fnew%2fid_39450.mp4
