@@ -80,6 +80,7 @@ class LogicAni24(object):
             try:
                 if video_url.find('/redirect.php') != -1:
                     video_url = video_url.split('/redirect.php')[0] + video_url.split('path=')[1].replace('%2f', '/').replace('%2F', '/')
+                    logger.debug('finaly' + video_url)
             except:
                 pass
             return video_url
