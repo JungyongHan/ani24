@@ -78,6 +78,7 @@ class LogicAni24(object):
             #https://files0.filegroupa.com/files/0/new/id_39450.mp4
             #https://files0.filegroupa.com/redirect.php?path=%2ffiles%2f0%2fnew%2fid_39450.mp4
             try:
+                raise Exception # redirect need
                 if video_url.find('/redirect.php') != -1:
                     video_url = video_url.split('/redirect.php')[0] + video_url.split('path=')[1].replace('%2f', '/').replace('%2F', '/')
                     logger.debug('finaly' + video_url)
